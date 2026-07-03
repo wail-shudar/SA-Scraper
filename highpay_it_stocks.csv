@@ -1,0 +1,77 @@
+Ticker,Name,GICS Sector,GICS Industry,Quote Page PVs for last 90 days,Last covered,Current Payment,Pending Review
+CAMT,Camtek Ltd.,Information Technology,Semiconductors & Semiconductor Equipment,13579,04/17/2026,$65,False
+DBD,"Diebold Nixdorf, Incorporated",Information Technology,"Technology Hardware, Storage & Peripherals",9038,04/17/2026,$65,False
+CPSH,CPS Technologies Corporation,Information Technology,"Electronic Equipment, Instruments & Components",8669,02/07/2022,$65,False
+BESIY,BE Semiconductor Industries N.V.,Information Technology,Semiconductors & Semiconductor Equipment,8492,04/07/2026,$65,False
+TDY,Teledyne Technologies Incorporated,Information Technology,"Electronic Equipment, Instruments & Components",8462,04/16/2026,$65,False
+RELL,"Richardson Electronics, Ltd.",Information Technology,"Electronic Equipment, Instruments & Components",4958,04/16/2026,$65,False
+ASMIY,ASM International NV,Information Technology,Semiconductors & Semiconductor Equipment,4721,04/13/2026,$65,False
+GPGI,"GPGI, Inc.",Information Technology,"Technology Hardware, Storage & Peripherals",4480,03/02/2026,$65,False
+EGHT,"8x8, Inc.",Information Technology,Software,3800,02/09/2026,$65,False
+LMN:CA,Lumine Group Inc.,Information Technology,Software,3785,02/24/2026,$65,False
+AIXXF,AIXTRON SE,Information Technology,Semiconductors & Semiconductor Equipment,3743,04/18/2026,$65,False
+SLAB,Silicon Laboratories Inc.,Information Technology,Semiconductors & Semiconductor Equipment,3724,03/10/2026,$65,False
+QNC,Quantum eMotion Corp.,Information Technology,Semiconductors & Semiconductor Equipment,3532,03/18/2026,$65,False
+PERF,Perfect Corp.,Information Technology,Software,3475,02/07/2026,$65,False
+FUJIY,FUJIFILM Holdings Corporation,Information Technology,"Technology Hardware, Storage & Peripherals",3451,04/14/2026,$65,False
+RAL,Ralliant Corporation,Information Technology,"Electronic Equipment, Instruments & Components",3396,02/05/2026,$65,False
+ENGH:CA,Enghouse Systems Limited,Information Technology,Software,3040,03/23/2026,$65,False
+BLND,"Blend Labs, Inc.",Information Technology,Software,3028,03/18/2026,$65,False
+LAW,"CS Disco, Inc.",Information Technology,Software,3022,02/05/2026,$65,False
+NTGR,"NETGEAR, Inc.",Information Technology,Communications Equipment,2895,03/24/2026,$65,False
+CLMB,"Climb Global Solutions, Inc.",Information Technology,"Electronic Equipment, Instruments & Components",2703,04/09/2026,$65,False
+ACIW,"ACI Worldwide, Inc.",Information Technology,Software,2607,03/03/2026,$65,False
+EXFY,"Expensify, Inc.",Information Technology,Software,2599,12/02/2025,$65,False
+PMTS,CPI Card Group Inc.,Information Technology,"Technology Hardware, Storage & Peripherals",2568,03/05/2026,$65,False
+WEAV,"Weave Communications, Inc.",Information Technology,Software,2507,02/23/2026,$65,False
+BRAI,Braiin Limited,Information Technology,Software,2370,03/18/2026,$65,False
+DMRC,Digimarc Corporation,Information Technology,Software,2353,03/16/2026,$65,False
+TONX,TON Strategy Company,Information Technology,Software,2326,11/20/2025,$65,False
+XPER,Xperi Inc.,Information Technology,Software,2065,09/29/2025,$65,False
+LMGIF,Lumine Group Inc.,Information Technology,Software,1997,02/24/2026,$65,False
+ALRM,"Alarm.com Holdings, Inc.",Information Technology,Software,1949,06/24/2025,$65,False
+BHE,"Benchmark Electronics, Inc.",Information Technology,"Electronic Equipment, Instruments & Components",1856,12/21/2025,$65,False
+CXT,"Crane NXT, Co.",Information Technology,"Electronic Equipment, Instruments & Components",1783,11/26/2025,$65,False
+RDWR,Radware Ltd.,Information Technology,Software,1759,04/10/2026,$65,False
+AUDC,AudioCodes Ltd.,Information Technology,Communications Equipment,1731,10/31/2025,$65,False
+ROC,Rank One Computing Corporation,Information Technology,Software,1707,,$65,False
+RSKD,Riskified Ltd.,Information Technology,Software,1705,04/14/2026,$65,False
+AIIXY,AIXTRON SE,Information Technology,Semiconductors & Semiconductor Equipment,1639,04/18/2026,$65,False
+HCKT,"The Hackett Group, Inc.",Information Technology,IT Services,1483,12/17/2025,$65,False
+GLOO,"Gloo Holdings, Inc.",Information Technology,Software,1431,02/04/2026,$65,False
+KN,Knowles Corporation,Information Technology,"Electronic Equipment, Instruments & Components",1428,12/17/2025,$65,False
+ISMAY,"Indra Sistemas, S.A.",Information Technology,IT Services,1180,04/15/2026,$65,False
+MCSYP,MicroStrategy Incorporated SER A PFD STK,Information Technology,Software,1179,,$65,False
+DSCSY,Disco Corporation,Information Technology,Semiconductors & Semiconductor Equipment,1110,04/09/2026,$65,False
+LSRCF,Lasertec Corporation,Information Technology,Semiconductors & Semiconductor Equipment,1026,06/18/2024,$65,False
+XFABF,X-FAB Silicon Foundries SE,Information Technology,Semiconductors & Semiconductor Equipment,996,09/12/2025,$65,False
+RDZN,"Roadzen, Inc.",Information Technology,Software,968,11/20/2025,$65,False
+OMRNY,OMRON Corporation,Information Technology,"Electronic Equipment, Instruments & Components",944,06/27/2025,$65,False
+WTCHF,WiseTech Global Limited,Information Technology,Software,924,09/02/2025,$65,False
+SSTI,"SoundThinking, Inc.",Information Technology,Software,882,10/05/2025,$65,False
+ZPTA,"Zapata Quantum, Inc.",Information Technology,Software,837,02/02/2026,$65,False
+MRAAF,"Murata Manufacturing Co., Ltd.",Information Technology,"Electronic Equipment, Instruments & Components",823,03/22/2023,$65,False
+DLEGF,Delta Electronics (Thailand) Public Company Limited,Information Technology,"Electronic Equipment, Instruments & Components",823,04/18/2025,$65,False
+FTGFF,Firan Technology Group Corporation,Information Technology,"Electronic Equipment, Instruments & Components",817,11/19/2025,$65,False
+FJTSY,Fujitsu Limited,Information Technology,IT Services,816,07/15/2025,$65,False
+TROO,"TROOPS, Inc.",Information Technology,"Electronic Equipment, Instruments & Components",813,09/19/2025,$65,False
+SUMCF,Sumco Corporation,Information Technology,Semiconductors & Semiconductor Equipment,811,02/04/2025,$65,False
+KXS:CA,Kinaxis Inc.,Information Technology,Software,811,04/22/2025,$65,False
+MRAAY,"Murata Manufacturing Co., Ltd.",Information Technology,"Electronic Equipment, Instruments & Components",811,03/22/2023,$65,False
+SHMD,SCHMID Group N.V.,Information Technology,"Electronic Equipment, Instruments & Components",809,,$65,False
+MTC,"MMTec, Inc.",Information Technology,Software,807,11/11/2023,$65,False
+WBTNF,Weebit Nano Limited,Information Technology,Semiconductors & Semiconductor Equipment,804,,$65,False
+IQEPY,IQE plc,Information Technology,Semiconductors & Semiconductor Equipment,803,,$65,False
+QTRHF,Quarterhill Inc.,Information Technology,Communications Equipment,801,09/01/2021,$65,False
+SMOPF,Smartoptics Group ASA,Information Technology,Communications Equipment,801,,$65,False
+MWC,"Micware Co., Ltd.",Information Technology,Software,801,03/09/2026,$65,False
+SANG,Sangoma Technologies Corporation,Information Technology,Communications Equipment,801,02/03/2026,$65,False
+CNXN,"PC Connection, Inc.",Information Technology,"Electronic Equipment, Instruments & Components",801,08/30/2024,$65,False
+ENSIF,EnSilica plc,Information Technology,Semiconductors & Semiconductor Equipment,202,,$65,False
+NYNOF,Nynomic AG,Information Technology,"Electronic Equipment, Instruments & Components",106,,$65,False
+CNTPF,Canatu Oyj,Information Technology,Semiconductors & Semiconductor Equipment,64,,$65,False
+RSTCF,"RS Technologies Co., Ltd.",Information Technology,Semiconductors & Semiconductor Equipment,20,,$65,False
+RMTHF,Matrix IT Ltd.,Information Technology,IT Services,0,,$65,False
+HQWWW,Horizon Quantum Holdings Ltd. WT EXP 031931,Information Technology,Software,0,,$65,False
+RGAKF,Rigaku Holdings Corporation,Information Technology,"Electronic Equipment, Instruments & Components",0,,$65,False
+ACT:CA,Aduro Clean Technologies Inc.,Information Technology,Software,0,,$65,False
