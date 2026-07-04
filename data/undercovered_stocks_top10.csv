@@ -1,11 +1,11 @@
 Ticker,Name,GICS Sector,GICS Industry,Quote Page PVs for last 90 days,Last covered,Current Payment,Pending Review
-IONQ,"IonQ, Inc.",Information Technology,"Technology Hardware, Storage & Peripherals",256081,06/09/2026,$45,TRUE
-WDC,Western Digital Corporation,Information Technology,"Technology Hardware, Storage & Peripherals",176433,06/23/2026,$45,FALSE
+WDC,Western Digital Corporation,Information Technology,"Technology Hardware, Storage & Peripherals",176433,06/23/2026,$45,TRUE
 NVTS,Navitas Semiconductor Corporation,Information Technology,Semiconductors & Semiconductor Equipment,165059,06/04/2026,$45,TRUE
+TTMI,"TTM Technologies, Inc.",Information Technology,"Electronic Equipment, Instruments & Components",160258,06/05/2026,$45,FALSE
 FN,Fabrinet,Information Technology,"Electronic Equipment, Instruments & Components",125058,06/26/2026,$45,TRUE
-SOXL,Direxion Daily Semiconductor Bull 3X ETF,,,124438,06/17/2026,$45,FALSE
-JEPI,JPMorgan Equity Premium Income ETF,,,109396,06/05/2026,$45,TRUE
 VISN,"Vistance Networks, Inc.",Information Technology,Communications Equipment,102631,06/03/2026,$45,FALSE
-SNEX,StoneX Group Inc.,Financials,Capital Markets,102426,06/24/2026,$45,TRUE
-PARR,"Par Pacific Holdings, Inc.",Energy,"Oil, Gas & Consumable Fuels",102023,07/01/2026,$45,FALSE
-BMY,Bristol-Myers Squibb Company,Health Care,Pharmaceuticals,94203,07/03/2026,$45,TRUE
+PGY,Pagaya Technologies Ltd.,Information Technology,Software,88205,06/30/2026,$45,FALSE
+AMKR,"Amkor Technology, Inc.",Information Technology,Semiconductors & Semiconductor Equipment,82116,06/17/2026,$45,FALSE
+PENG,"Penguin Solutions, Inc.",Information Technology,Semiconductors & Semiconductor Equipment,80524,06/04/2026,$45,FALSE
+STM,STMicroelectronics N.V.,Information Technology,Semiconductors & Semiconductor Equipment,61477,06/27/2026,$45,FALSE
+SAP,SAP SE,Information Technology,Software,58606,06/03/2026,$45,TRUE
