@@ -17,6 +17,7 @@ DATA_DIR = Path("data")
 SNAPSHOT_PATH = DATA_DIR / "undercovered_stocks_top10.csv"
 IT_SECTOR = "Information Technology"
 PV_COLUMN = "Quote Page PVs for last 90 days"
+PENDING_REVIEW_COLUMN = "Pending Review"
 
 EMAIL_SUBJECT_PREFIX = "SA Ticker Alert"
 
@@ -60,6 +61,9 @@ def _filter_it_rows(rows: pd.DataFrame) -> pd.DataFrame:
         A filtered DataFrame containing only Information Technology rows.
     """
     filtered = rows[rows["GICS Sector"].eq(IT_SECTOR)].copy()
+    if PENDING_REVIEW_COLUMN in filtered.columns:
+        pending_review = filtered[PENDING_REVIEW_COLUMN].astype(str).str.upper().eq("TRUE")
+        filtered = filtered[~pending_review].copy()
     if PV_COLUMN in filtered.columns:
         filtered[PV_COLUMN] = pd.to_numeric(filtered[PV_COLUMN], errors="coerce").fillna(0).astype(int)
         filtered = filtered.sort_values(by=PV_COLUMN, ascending=False)
@@ -120,28 +124,24 @@ def _save_snapshot(top10: pd.DataFrame) -> None:
     top10.to_csv(SNAPSHOT_PATH, index=False)
 
 
-def _changed_row_numbers(previous: pd.DataFrame, current: pd.DataFrame) -> list[int]:
-    """Compute changed row positions between two DataFrames.
+def _new_entries(previous: pd.DataFrame, current: pd.DataFrame) -> pd.DataFrame:
+    """Return rows that are present in the current snapshot but not the previous one.
 
     Args:
         previous: The prior snapshot.
         current: The latest snapshot.
 
     Returns:
-        A list of 1-based row positions that changed.
+        A DataFrame containing only newly added rows, compared by ticker.
     """
-    changed_rows: list[int] = []
-    max_rows = max(len(previous), len(current))
+    if previous.empty:
+        return current.copy()
 
-    for index in range(max_rows):
-        if index >= len(previous) or index >= len(current):
-            changed_rows.append(index + 1)
-            continue
+    if "Ticker" not in previous.columns or "Ticker" not in current.columns:
+        return current.copy()
 
-        if not previous.iloc[index].equals(current.iloc[index]):
-            changed_rows.append(index + 1)
-
-    return changed_rows
+    previous_tickers = set(previous["Ticker"].astype(str))
+    return current[~current["Ticker"].astype(str).isin(previous_tickers)].copy()
 
 
 def _parse_recipients(raw_recipients: str) -> list[str]:
@@ -192,68 +192,58 @@ def _email_settings() -> dict[str, object]:
     }
 
 
-def _rename_pv_column(frame: pd.DataFrame) -> pd.DataFrame:
-    """Rename the PV column for email presentation.
+def _format_new_entries(frame: pd.DataFrame) -> pd.DataFrame:
+    """Prepare new entries for email presentation.
 
     Args:
-        frame: The DataFrame to rename.
+        frame: The DataFrame containing newly added rows.
 
     Returns:
         The DataFrame with the PV column renamed when present.
     """
-    if PV_COLUMN not in frame.columns:
+    if frame.empty:
         return frame
 
-    return frame.rename(columns={PV_COLUMN: "Symbol PV"})
+    display = frame.copy()
+    if PV_COLUMN in display.columns:
+        display = display.rename(columns={PV_COLUMN: "Symbol PV"})
+
+    columns = [column for column in ["Ticker", "Name", "Symbol PV"] if column in display.columns]
+    return display.loc[:, columns]
 
 
 def _build_email(
-    previous: pd.DataFrame,
-    current: pd.DataFrame,
-    changed_rows: list[int],
+    new_entries: pd.DataFrame,
     settings: dict[str, object],
 ) -> EmailMessage:
-    """Build the alert email for changed Information Technology rows.
+    """Build the alert email for newly added Information Technology rows.
 
     Args:
-        previous: The previous snapshot DataFrame.
-        current: The current snapshot DataFrame.
-        changed_rows: The 1-based row numbers that changed.
+        new_entries: The newly added rows.
         settings: Email delivery settings.
 
     Returns:
         A multipart email message ready to send.
     """
     subject_prefix = os.getenv("EMAIL_SUBJECT_PREFIX", EMAIL_SUBJECT_PREFIX)
-    subject = f"[{subject_prefix}] Top 10 Information Technology rows changed"
+    subject = f"[{subject_prefix}] New Information Technology entries"
     sender = cast(str, settings["sender"])
     recipients = cast(list[str], settings["recipients"])
 
-    changed_rows_text = ", ".join(str(row_number) for row_number in changed_rows)
-    previous_display = _rename_pv_column(previous.copy())
-    current_display = _rename_pv_column(current.copy())
+    new_entries_display = _format_new_entries(new_entries)
 
-    text_body = (
-        "The top 10 Information Technology rows in undercovered_stocks.csv changed.\n\n"
-        f"Changed row positions: {changed_rows_text}\n\n"
-        "Previous top 10:\n"
-        f"{previous_display.to_string(index=False)}\n\n"
-        "Current top 10:\n"
-        f"{current_display.to_string(index=False)}\n"
-    )
-
-    html_body = f"""
-    <html>
-      <body style=\"font-family: Arial, sans-serif; line-height: 1.5; color: #1f2937;\">
-                <h2 style=\"margin-bottom: 0.25rem;\">Top 10 Information Technology rows changed</h2>
-        <p style=\"margin-top: 0;\">Changed row positions: {changed_rows_text}</p>
-        <h3>Previous top 10</h3>
-                {previous_display.to_html(index=False, border=0)}
-        <h3>Current top 10</h3>
-                {current_display.to_html(index=False, border=0)}
-      </body>
-    </html>
-    """
+    if new_entries_display.empty:
+        text_body = "No new Information Technology entries were found."
+        html_body = "<html><body><p>No new Information Technology entries were found.</p></body></html>"
+    else:
+        text_body = new_entries_display.to_string(index=False)
+        html_body = f"""
+        <html>
+          <body style=\"font-family: Arial, sans-serif; line-height: 1.5; color: #1f2937;\">
+            {new_entries_display.to_html(index=False, border=0)}
+          </body>
+        </html>
+        """
 
     message = EmailMessage()
     message["Subject"] = subject
@@ -304,18 +294,18 @@ def main() -> int:
         print(f"Created top 10 Information Technology snapshot at {SNAPSHOT_PATH}.")
         return 0
 
-    if current_top10.equals(previous_top10):
+    new_entries = _new_entries(previous_top10, current_top10)
+
+    if new_entries.empty:
         _save_snapshot(current_top10)
-        print("No changes detected in the top 10 Information Technology rows.")
+        print("No new Information Technology entries detected.")
         return 0
 
-    changed_rows = _changed_row_numbers(previous_top10, current_top10)
     email_settings = _email_settings()
-    email_message = _build_email(previous_top10, current_top10, changed_rows, email_settings)
+    email_message = _build_email(new_entries, email_settings)
     _send_email(email_message, email_settings)
     _save_snapshot(current_top10)
 
-    print(f"Top 10 Information Technology rows changed at positions: {', '.join(str(row) for row in changed_rows)}")
     print(f"Snapshot updated at {SNAPSHOT_PATH} and email sent.")
     return 0
 
