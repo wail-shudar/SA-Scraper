@@ -1,0 +1,45 @@
+name: SA Tracker Alert
+
+on:
+  schedule:
+    - cron: '0 * * * *'  # Run hourly
+  workflow_dispatch:  # Allow manual trigger
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    
+    env:
+      SMTP_HOST: ${{ vars.SMTP_HOST }}
+      SMTP_PORT: ${{ vars.SMTP_PORT }}
+      SMTP_USE_SSL: ${{ vars.SMTP_USE_SSL }}
+      SMTP_USE_STARTTLS: ${{ vars.SMTP_USE_STARTTLS }}
+      EMAIL_TO: ${{ vars.EMAIL_TO }}
+      EMAIL_FROM: ${{ vars.EMAIL_FROM }}
+      EMAIL_SUBJECT_PREFIX: ${{ vars.EMAIL_SUBJECT_PREFIX }}
+      SA_COOKIE: ${{ secrets.SA_COOKIE }}
+      SMTP_USERNAME: ${{ secrets.SMTP_USERNAME }}
+      SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
+
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+      
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+      
+      - name: Run alert
+        run: python stock_picks_alert.py
+      
+      - name: Commit and push snapshot
+        if: success()
+        run: |
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+          git add -A
+          git commit -m "Update snapshot" || echo "No changes to commit"
+          git push
