@@ -1,7 +1,7 @@
 Ticker,Name,GICS Sector,GICS Industry,Quote Page PVs for last 90 days,Last covered,Current Payment,Pending Review
 WDC,Western Digital Corporation,Information Technology,"Technology Hardware, Storage & Peripherals",176433,06/23/2026,$45,FALSE
 NVTS,Navitas Semiconductor Corporation,Information Technology,Semiconductors & Semiconductor Equipment,165059,06/04/2026,$45,TRUE
-TTMI,"TTM Technologies, Inc.",Information Technology,"Electronic Equipment, Instruments & Components",160258,06/05/2026,$45,FALSE
+TTMI,"TTM Technologies, Inc.",Information Technology,"Electronic Equipment, Instruments & Components",160258,06/05/2026,$45,TRUE
 FN,Fabrinet,Information Technology,"Electronic Equipment, Instruments & Components",125058,06/26/2026,$45,TRUE
 VISN,"Vistance Networks, Inc.",Information Technology,Communications Equipment,102631,06/03/2026,$45,FALSE
 PGY,Pagaya Technologies Ltd.,Information Technology,Software,88205,06/30/2026,$45,FALSE
