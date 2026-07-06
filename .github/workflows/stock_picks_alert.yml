@@ -24,7 +24,7 @@ jobs:
           persist-credentials: true
 
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: "3.12"
 
@@ -55,6 +55,6 @@ jobs:
 
           git config user.name "Wail"
           git config user.email "hello@shudar.com"
-          git add data/undercovered_stocks_top10.csv
+          git add -f data/undercovered_stocks_top10.csv
           git commit -m "Update top 10 stock snapshot [skip ci]"
           git push origin HEAD:${{ github.ref_name }}
