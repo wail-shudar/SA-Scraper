@@ -1,11 +1,11 @@
 Ticker,Name,GICS Sector,GICS Industry,Quote Page PVs for last 90 days,Last covered,Current Payment,Pending Review
 TTMI,"TTM Technologies, Inc.",Information Technology,"Electronic Equipment, Instruments & Components",161814,07/04/2026,$45,FALSE
-NLST,"Netlist, Inc.",Information Technology,"Electronic Equipment, Instruments & Components",89398,06/20/2026,$45,FALSE
 PGY,Pagaya Technologies Ltd.,Information Technology,Software,88205,06/30/2026,$45,FALSE
 PENG,"Penguin Solutions, Inc.",Information Technology,Semiconductors & Semiconductor Equipment,80524,06/04/2026,$45,FALSE
-RBRK,"Rubrik, Inc.",Information Technology,Software,75075,06/17/2026,$45,FALSE
 STM,STMicroelectronics N.V.,Information Technology,Semiconductors & Semiconductor Equipment,61477,06/27/2026,$45,FALSE
 MCHP,Microchip Technology Incorporated,Information Technology,Semiconductors & Semiconductor Equipment,59160,06/12/2026,$45,FALSE
 VIAV,Viavi Solutions Inc.,Information Technology,Communications Equipment,55660,05/05/2026,$53,FALSE
 LASR,"nLIGHT, Inc.",Information Technology,"Electronic Equipment, Instruments & Components",55636,05/15/2026,$45,FALSE
 BBAI,"BigBear.ai Holdings, Inc.",Information Technology,IT Services,52211,06/02/2026,$45,FALSE
+WOLF,"Wolfspeed, Inc.",Information Technology,Semiconductors & Semiconductor Equipment,50218,06/10/2026,$45,FALSE
+WULF,TeraWulf Inc.,Information Technology,Software,49514,06/18/2026,$45,FALSE
