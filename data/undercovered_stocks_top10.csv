@@ -1,5 +1,4 @@
 Ticker,Name,GICS Sector,GICS Industry,Quote Page PVs for last 90 days,Last covered,Current Payment,Pending Review
-ASX,"ASE Technology Holding Co., Ltd.",Information Technology,Semiconductors & Semiconductor Equipment,120934,06/10/2026,$45,FALSE
 PGY,Pagaya Technologies Ltd.,Information Technology,Software,88205,06/30/2026,$45,FALSE
 PENG,"Penguin Solutions, Inc.",Information Technology,Semiconductors & Semiconductor Equipment,80524,06/04/2026,$45,FALSE
 STM,STMicroelectronics N.V.,Information Technology,Semiconductors & Semiconductor Equipment,61477,06/27/2026,$45,FALSE
@@ -9,3 +8,4 @@ LASR,"nLIGHT, Inc.",Information Technology,"Electronic Equipment, Instruments & 
 BBAI,"BigBear.ai Holdings, Inc.",Information Technology,IT Services,52211,06/02/2026,$45,FALSE
 WOLF,"Wolfspeed, Inc.",Information Technology,Semiconductors & Semiconductor Equipment,50218,06/10/2026,$45,FALSE
 WULF,TeraWulf Inc.,Information Technology,Software,49514,06/18/2026,$45,FALSE
+CLSK,"CleanSpark, Inc.",Information Technology,Software,49400,06/22/2026,$45,FALSE
