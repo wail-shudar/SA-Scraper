@@ -1,11 +1,11 @@
 Ticker,Name,GICS Sector,GICS Industry,Quote Page PVs for last 90 days,Last covered,Current Payment,Pending Review
+GLW,Corning Incorporated,Information Technology,"Electronic Equipment, Instruments & Components",224388,06/10/2026,$45,FALSE
 VISN,"Vistance Networks, Inc.",Information Technology,Communications Equipment,102631,07/08/2026,$45,FALSE
 FLEX,Flex Ltd.,Information Technology,"Electronic Equipment, Instruments & Components",78468,06/10/2026,$45,FALSE
+UCTT,"Ultra Clean Holdings, Inc.",Information Technology,Semiconductors & Semiconductor Equipment,70791,07/08/2026,$45,FALSE
 MRAM,"Everspin Technologies, Inc.",Information Technology,Semiconductors & Semiconductor Equipment,61493,05/15/2026,$46,FALSE
 STM,STMicroelectronics N.V.,Information Technology,Semiconductors & Semiconductor Equipment,61477,06/27/2026,$45,FALSE
 MCHP,Microchip Technology Incorporated,Information Technology,Semiconductors & Semiconductor Equipment,59160,06/12/2026,$45,FALSE
 VIAV,Viavi Solutions Inc.,Information Technology,Communications Equipment,55851,07/09/2026,$45,FALSE
 BBAI,"BigBear.ai Holdings, Inc.",Information Technology,IT Services,52211,06/02/2026,$45,FALSE
 WOLF,"Wolfspeed, Inc.",Information Technology,Semiconductors & Semiconductor Equipment,50218,06/10/2026,$45,FALSE
-WULF,TeraWulf Inc.,Information Technology,Software,49514,06/18/2026,$45,FALSE
-CLSK,"CleanSpark, Inc.",Information Technology,Software,49400,06/22/2026,$45,FALSE
