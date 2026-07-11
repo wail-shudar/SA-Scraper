@@ -1,6 +1,4 @@
 Ticker,Name,GICS Sector,GICS Industry,Quote Page PVs for last 90 days,Last covered,Current Payment,Pending Review
-LRCX,Lam Research Corporation,Information Technology,Semiconductors & Semiconductor Equipment,147951,06/22/2026,$45,FALSE
-RXT,"Rackspace Technology, Inc.",Information Technology,IT Services,140626,07/09/2026,$45,FALSE
 ASX,"ASE Technology Holding Co., Ltd.",Information Technology,Semiconductors & Semiconductor Equipment,123790,07/08/2026,$45,FALSE
 VISN,"Vistance Networks, Inc.",Information Technology,Communications Equipment,102631,07/08/2026,$45,FALSE
 PATH,"UiPath, Inc.",Information Technology,Software,96929,06/11/2026,$45,FALSE
@@ -9,3 +7,5 @@ TWLO,Twilio Inc.,Information Technology,IT Services,74009,07/07/2026,$45,FALSE
 UCTT,"Ultra Clean Holdings, Inc.",Information Technology,Semiconductors & Semiconductor Equipment,70791,07/08/2026,$45,FALSE
 MRAM,"Everspin Technologies, Inc.",Information Technology,Semiconductors & Semiconductor Equipment,61603,05/15/2026,$47,FALSE
 STM,STMicroelectronics N.V.,Information Technology,Semiconductors & Semiconductor Equipment,61477,06/27/2026,$45,FALSE
+FSLR,"First Solar, Inc.",Information Technology,Semiconductors & Semiconductor Equipment,60494,06/11/2026,$45,FALSE
+MCHP,Microchip Technology Incorporated,Information Technology,Semiconductors & Semiconductor Equipment,59160,06/12/2026,$45,FALSE
