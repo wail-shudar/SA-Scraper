@@ -1,5 +1,6 @@
 Ticker,Name,GICS Sector,GICS Industry,Quote Page PVs for last 90 days,Last covered,Current Payment,Pending Review
 NOK,Nokia Oyj,Information Technology,Communications Equipment,152939,06/11/2026,$45,FALSE
+LRCX,Lam Research Corporation,Information Technology,Semiconductors & Semiconductor Equipment,147951,06/22/2026,$45,FALSE
 ASX,"ASE Technology Holding Co., Ltd.",Information Technology,Semiconductors & Semiconductor Equipment,123790,07/08/2026,$45,FALSE
 PATH,"UiPath, Inc.",Information Technology,Software,96929,06/11/2026,$45,FALSE
 FLEX,Flex Ltd.,Information Technology,"Electronic Equipment, Instruments & Components",78468,06/10/2026,$45,FALSE
@@ -8,4 +9,3 @@ ENPH,"Enphase Energy, Inc.",Information Technology,Semiconductors & Semiconducto
 MRAM,"Everspin Technologies, Inc.",Information Technology,Semiconductors & Semiconductor Equipment,61689,05/15/2026,$48,FALSE
 STM,STMicroelectronics N.V.,Information Technology,Semiconductors & Semiconductor Equipment,61477,06/27/2026,$45,FALSE
 FSLR,"First Solar, Inc.",Information Technology,Semiconductors & Semiconductor Equipment,60494,06/11/2026,$45,FALSE
-MCHP,Microchip Technology Incorporated,Information Technology,Semiconductors & Semiconductor Equipment,59160,06/12/2026,$45,FALSE
