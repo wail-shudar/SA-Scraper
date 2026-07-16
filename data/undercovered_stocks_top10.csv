@@ -2,10 +2,10 @@ Ticker,Name,GICS Sector,GICS Industry,Quote Page PVs for last 90 days,Last cover
 TER,"Teradyne, Inc.",Information Technology,Semiconductors & Semiconductor Equipment,89924,07/16/2026,$45,FALSE
 QUBT,Quantum Computing Inc.,Information Technology,"Technology Hardware, Storage & Peripherals",70653,07/02/2026,$45,FALSE
 MRAM,"Everspin Technologies, Inc.",Information Technology,Semiconductors & Semiconductor Equipment,62218,05/15/2026,$52,FALSE
+TSEM,Tower Semiconductor Ltd.,Information Technology,Semiconductors & Semiconductor Equipment,62078,06/19/2026,$45,FALSE
 FSLR,"First Solar, Inc.",Information Technology,Semiconductors & Semiconductor Equipment,60494,06/11/2026,$45,FALSE
 MCHP,Microchip Technology Incorporated,Information Technology,Semiconductors & Semiconductor Equipment,59160,06/12/2026,$45,FALSE
 VIAV,Viavi Solutions Inc.,Information Technology,Communications Equipment,55851,07/09/2026,$45,FALSE
 BBAI,"BigBear.ai Holdings, Inc.",Information Technology,IT Services,52211,07/14/2026,$45,FALSE
-HIMX,"Himax Technologies, Inc.",Information Technology,Semiconductors & Semiconductor Equipment,50490,05/21/2026,$46,FALSE
-AMBA,"Ambarella, Inc.",Information Technology,Semiconductors & Semiconductor Equipment,48494,06/03/2026,$45,FALSE
-HUT,Hut 8 Corp.,Information Technology,Software,48476,06/29/2026,$45,FALSE
+HIMX,"Himax Technologies, Inc.",Information Technology,Semiconductors & Semiconductor Equipment,50454,05/21/2026,$47,FALSE
+WOLF,"Wolfspeed, Inc.",Information Technology,Semiconductors & Semiconductor Equipment,50218,06/10/2026,$45,FALSE
