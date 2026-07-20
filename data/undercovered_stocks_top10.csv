@@ -1,6 +1,7 @@
 Ticker,Name,GICS Sector,GICS Industry,Quote Page PVs for last 90 days,Last covered,Current Payment,Pending Review
 ZETA,Zeta Global Holdings Corp.,Information Technology,Software,115609,07/18/2026,$45,FALSE
 APH,Amphenol Corporation,Information Technology,"Electronic Equipment, Instruments & Components",105162,07/10/2026,$45,FALSE
+NLST,"Netlist, Inc.",Information Technology,"Electronic Equipment, Instruments & Components",103337,07/08/2026,$45,FALSE
 AMKR,"Amkor Technology, Inc.",Information Technology,Semiconductors & Semiconductor Equipment,84303,07/05/2026,$45,FALSE
 BMNR,"Bitmine Immersion Technologies, Inc.",Information Technology,Software,79978,07/10/2026,$45,FALSE
 TEAM,Atlassian Corporation,Information Technology,Software,75759,06/18/2026,$45,FALSE
@@ -8,4 +9,3 @@ SOUN,"SoundHound AI, Inc.",Information Technology,Software,72747,07/17/2026,$45,
 QUBT,Quantum Computing Inc.,Information Technology,"Technology Hardware, Storage & Peripherals",70653,07/02/2026,$45,FALSE
 MRAM,"Everspin Technologies, Inc.",Information Technology,Semiconductors & Semiconductor Equipment,62549,07/18/2026,$45,FALSE
 TSEM,Tower Semiconductor Ltd.,Information Technology,Semiconductors & Semiconductor Equipment,62078,06/19/2026,$45,FALSE
-FSLR,"First Solar, Inc.",Information Technology,Semiconductors & Semiconductor Equipment,60494,07/17/2026,$45,FALSE
